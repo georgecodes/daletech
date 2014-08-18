@@ -1,4 +1,4 @@
-package com.elevenware.diesel;
+package com.elevenware.daletech;
 
 import org.junit.Test;
 

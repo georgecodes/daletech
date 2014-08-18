@@ -1,4 +1,4 @@
-package com.elevenware.diesel;
+package com.elevenware.daletech;
 
 import groovy.lang.GroovyObjectSupport;
 
