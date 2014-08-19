@@ -1,1 +1,1 @@
-# Diesel - a library for building Groovy DSLs
+# Daletech - a library for building Groovy DSLs
