@@ -1,9 +1,7 @@
-apply plugin: 'java'
-apply plugin: 'maven'
+apply from: 'build.gradle'
+
 apply plugin: 'signing'
 
-group='com.elevenware'
-version='1.0-SNAPSHOT'
 archivesBaseName='daletech'
 
 task javadocJar(type: Jar) {
@@ -22,16 +20,6 @@ artifacts {
 
 signing {
     sign configurations.archives
-}
-
-repositories {
-    mavenCentral()
-    mavenLocal()
-}
-
-dependencies {
- testCompile "junit:junit:4.11"
- compile "org.codehaus.groovy:groovy-all:2.4.0-beta-1"
 }
 
 uploadArchives {
