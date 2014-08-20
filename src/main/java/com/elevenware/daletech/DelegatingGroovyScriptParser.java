@@ -11,7 +11,7 @@ import java.io.Reader;
 /**
  * @author George McIntosh <george@elevenware.com>
  * @version 1.0
- * @see 20th August 2014
+ * @since 20th August 2014
  *
  * A class which parses a Groovy script, passing an arbitrary object - typically a
  * {@link com.elevenware.daletech.ConfigurableGroovyDelegate} as a delegate, and allowing
