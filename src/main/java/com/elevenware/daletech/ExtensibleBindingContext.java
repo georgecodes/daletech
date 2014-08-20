@@ -5,6 +5,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author George McIntosh <george@elevenware.com>
+ * @version 1.0
+ * @since 20th August 2014
+ *
+ * This class adds to the functionality of {@link com.elevenware.daletech.ConfigurableGroovyDelegate}
+ * by allowing arbitrary parameters to be added to it, thus allowing it to be a binding for closures.
+ */
 public class ExtensibleBindingContext extends ConfigurableGroovyDelegate implements Map {
 
     private Map bindingDelegate;

@@ -4,14 +4,23 @@ import groovy.lang.GroovyObjectSupport;
 
 import java.util.*;
 
+/**
+ * @author George McIntosh <george@elevenware.com>
+ * @version 1.0
+ * @since 20th August 2014
+ *
+ * This class is useful as a delegate to parsed scripts, allowing for method calls
+ * to be intercepted and delegated to configured plugins. This is also useful
+ * when using this class as a delegate to a captured closure.
+ *
+ *
+ */
 public class ConfigurableGroovyDelegate extends GroovyObjectSupport  {
 
-    private Map<String, String> parameters;
     private List<ActionPlugin> plugins;
     private Object entity;
 
     public ConfigurableGroovyDelegate() {
-        this.parameters = new HashMap<>();
         this.plugins = new ArrayList<>();
     }
 

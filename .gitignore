@@ -2,3 +2,5 @@ target/
 diesel.iml
 .gradle
 build
+docs
+daletech.iml

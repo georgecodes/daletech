@@ -1,5 +1,13 @@
 package com.elevenware.daletech;
 
+/**
+ * @author George McIntosh <george@elevenware.com>
+ * @version 1.0
+ * @since 20th August 2014
+ *
+ * Utility class for seeing if sets of classes or objects match. Useful if seeing if
+ * a candidate for reflective invocation is suitable.
+ */
 public class TypesMatcher {
 
     private final Class[] myTypes;

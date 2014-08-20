@@ -3,8 +3,39 @@ package com.elevenware.daletech;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
+/**
+ *
+ * @author George McIntosh <george@elevenware.com>
+ * @version 1.0
+ * @since 20th August 2014
+ *
+ * ActionPlugin - a unit of extension
+ * <p>
+ * This base class is used for plumbing in annotated methods to instances of
+ * {@link com.elevenware.daletech.ConfigurableGroovyDelegate} as candidates for
+ * delegation.
+ *
+ * <b>Example:</b>
+ * <pre>
+ * {@code}
+ * public class MyPlugin extends ActionPlugin &#123;
+ *     {@literal @}ActionDelegate
+ *     public void sayHello()&#123;
+ *         System.out.printn("Hello, world!");
+ *     &#125;
+ *  &#125;
+ *
+ * </pre>
+ *
+ * This will print out "Hello, world!" when the script encounters the line sayHello()
+ *
+ * </p>
+ *
+ *
+ */
 public class ActionPlugin {
 
     private List<InvocationDescriptor> descriptors;
@@ -43,7 +74,7 @@ public class ActionPlugin {
                 return descriptor.getMethod();
             }
         }
-        throw new RuntimeException("Cannot find a way to invoke (" + target + ")");
+        throw new RuntimeException("Cannot find a way to invoke (" + target + ") with args " + Arrays.toString(args));
     }
 
     public boolean canHandle(String target) {
