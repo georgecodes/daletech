@@ -39,6 +39,7 @@ uploadArchives {
                 name 'daletech'
                 packaging 'jar'
                 // optionally artifactId can be defined here
+                description 'A library for creating DSLs in Groovy, and manipulating them with Java'
                 url 'http://www.georgemcintosh.com/daletech'
 
                 scm {
