@@ -1,15 +1,5 @@
----
-layout: page
-title: "daletech"
-date: 2014-08-20 07:57
-comments: true
-sharing: true
-footer: true
----
-[![Build Status](https://travis-ci.org/georgecodes/daletech.png?branch=master)](https://travis-ci.org/georgecodes/daletech)
 
-*
-{:toc}
+[![Build Status](https://travis-ci.org/georgecodes/daletech.png?branch=master)](https://travis-ci.org/georgecodes/daletech)
 
 ## Introduction
 Daletech is a small Java library that facilitates the use of Groovy code to build DSLs that can configure and interact with your Java code. It evolved out of a sprinkling of classes I wrote in another project, which I realised could be generalised and used elsewhere. At the core, Daletech is just a Groovy script parser that accepts a general-purpose, easily extensible delegate for those scripts.
