@@ -34,6 +34,7 @@ public class ConfigurableGroovyDelegate extends GroovyObjectSupport  {
         }
         for(ActionPlugin plugin: plugins) {
             if(plugin != null && plugin.canHandle(name)) {
+                process(plugin);
                 return plugin.invoke(name, realArgs);
             }
         }
@@ -53,6 +54,10 @@ public class ConfigurableGroovyDelegate extends GroovyObjectSupport  {
         for(ActionPlugin plugin:plugins) {
             registerPlugin(plugin);
         }
+    }
+
+    protected void process(ActionPlugin plugin) {
+
     }
 
 }
