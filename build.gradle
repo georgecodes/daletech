@@ -14,3 +14,12 @@ dependencies {
  compile "org.codehaus.groovy:groovy-all:2.4.0-beta-1"
 }
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "net.saliman:gradle-cobertura-plugin:2.2.0"
+    }
+}
+apply plugin: 'cobertura'
