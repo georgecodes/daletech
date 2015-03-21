@@ -199,3 +199,4 @@ and then an ActionPlugin class to configure them:
 Wiring that plugin class into the usual configurable delegate, and the parser, and you're away. Once the script has run, you can query the plugin for the configured beans, and with a little reflection magic you'd have a simple working constructor-injection based IoC container, complete with Groovy DSL for configuration. 
 
 You'll notice that in the two bean methods, I put the Map argument at the start, despite it not being the first argument passed. This is a little Groovy gotcha where implicit map parameters are always put at the start of the argument list.
+test
