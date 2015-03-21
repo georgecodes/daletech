@@ -200,3 +200,4 @@ Wiring that plugin class into the usual configurable delegate, and the parser, a
 
 You'll notice that in the two bean methods, I put the Map argument at the start, despite it not being the first argument passed. This is a little Groovy gotcha where implicit map parameters are always put at the start of the argument list.
 test
+test
